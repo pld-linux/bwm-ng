@@ -5,7 +5,7 @@ Version:	0.5
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	http://www.gropp.org/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://www.gropp.org/bwm-ng/%{name}-%{version}.tar.gz
 # Source0-md5:	4c5197527c985dc8b45973dfd00deca0
 URL:		http://www.gropp.org/
 BuildRequires:	libstatgrab-devel
@@ -42,6 +42,7 @@ dynamicznie w trakcie dzia³ania programu.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir},%{_mandir}/man1}
+
 install src/bwm-ng $RPM_BUILD_ROOT%{_bindir}
 install bwm-ng.conf-example $RPM_BUILD_ROOT%{_sysconfdir}/bwm-ng.conf
 install bwm-ng.1 $RPM_BUILD_ROOT%{_mandir}/man1

@@ -1,12 +1,12 @@
 Summary:	Bandwidth monitor - display bandwidth usage on all interfaces
 Summary(pl):	Bandwidth monitor - wy¶wietlanie obci±¿enia na interfejsach
 Name:		bwm-ng
-Version:	0.4
+Version:	0.5
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	http://www.gropp.org/%{name}-%{version}.tar.gz
-# Source0-md5:	4fc0839ae212bc0b805fc4adeb55a3ac
+Source0:	http://www.gropp.org/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	4c5197527c985dc8b45973dfd00deca0
 URL:		http://www.gropp.org/
 BuildRequires:	libstatgrab-devel
 BuildRequires:	ncurses-devel
@@ -41,15 +41,17 @@ dynamicznie w trakcie dzia³ania programu.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir}}
-install bwm-ng $RPM_BUILD_ROOT%{_bindir}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_sysconfdir},%{_mandir}/man1}
+install src/bwm-ng $RPM_BUILD_ROOT%{_bindir}
 install bwm-ng.conf-example $RPM_BUILD_ROOT%{_sysconfdir}/bwm-ng.conf
+install bwm-ng.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README changelog
+%doc AUTHORS README changelog
 %attr(755,root,root) %{_bindir}/*
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/bwm-ng.conf
+%{_mandir}/man1/*

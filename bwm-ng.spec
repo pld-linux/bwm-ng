@@ -21,6 +21,16 @@ those interfaces that are up. Output is possible as plain console,
 curses, CSV, or HTML. Unlimited interfaces are supported and will be
 added dynamically while running.
 
+%description -l pl
+Bandwidth Monitor NG to ma³y i prosty dzia³aj±cy na terminalu
+tekstowym monitor wykorzystania pasma dla Linuksa, BSD i Mac OS X lub
+innych systemów z interfejsem /proc/net/dev, netstat, getifaddrs,
+sysctl lub libstatgrab. Mo¿na wybraæ, czy maj± byæ pokazywane
+wszystkie interfejsy, czy tylko aktualnie w³±czone. Obs³ugiwane jest
+wyj¶cie na zwyk³± konsolê, przez curses, w CSV lub w HTML-u.
+Obs³ugiwana jest nieograniczona liczba interfejsów, bêd± one dodawane
+dynamicznie w trakcie dzia³ania programu.
+
 %prep
 %setup -q
 
@@ -42,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README changelog
 %attr(755,root,root) %{_bindir}/*
-%{_sysconfdir}/*
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/bwm-ng.conf

@@ -7,6 +7,7 @@ License:	GPL
 Group:		Networking/Utilities
 Source0:	http://www.gropp.org/bwm-ng/%{name}-%{version}.tar.gz
 # Source0-md5:	4c5197527c985dc8b45973dfd00deca0
+Patch0:		%{name}-procfile.patch
 URL:		http://www.gropp.org/
 BuildRequires:	libstatgrab-devel
 BuildRequires:	ncurses-devel
@@ -33,6 +34,7 @@ dynamicznie w trakcie dzia³ania programu.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure

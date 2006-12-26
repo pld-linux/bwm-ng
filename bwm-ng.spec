@@ -2,7 +2,7 @@ Summary:	Bandwidth monitor - display bandwidth usage on all interfaces
 Summary(pl):	Bandwidth monitor - wy¶wietlanie obci±¿enia na interfejsach
 Name:		bwm-ng
 Version:	0.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://www.gropp.org/bwm-ng/%{name}-%{version}.tar.gz

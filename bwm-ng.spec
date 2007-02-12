@@ -1,5 +1,5 @@
 Summary:	Bandwidth monitor - display bandwidth usage on all interfaces
-Summary(pl.UTF-8):   Bandwidth monitor - wyświetlanie obciążenia na interfejsach
+Summary(pl.UTF-8):	Bandwidth monitor - wyświetlanie obciążenia na interfejsach
 Name:		bwm-ng
 Version:	0.5
 Release:	2

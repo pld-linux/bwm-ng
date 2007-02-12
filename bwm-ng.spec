@@ -1,5 +1,5 @@
 Summary:	Bandwidth monitor - display bandwidth usage on all interfaces
-Summary(pl):	Bandwidth monitor - wy¶wietlanie obci±¿enia na interfejsach
+Summary(pl.UTF-8):   Bandwidth monitor - wyÅ›wietlanie obciÄ…Å¼enia na interfejsach
 Name:		bwm-ng
 Version:	0.5
 Release:	2
@@ -22,15 +22,15 @@ those interfaces that are up. Output is possible as plain console,
 curses, CSV, or HTML. Unlimited interfaces are supported and will be
 added dynamically while running.
 
-%description -l pl
-Bandwidth Monitor NG to ma³y i prosty dzia³aj±cy na terminalu
+%description -l pl.UTF-8
+Bandwidth Monitor NG to maÅ‚y i prosty dziaÅ‚ajÄ…cy na terminalu
 tekstowym monitor wykorzystania pasma dla Linuksa, BSD i Mac OS X lub
-innych systemów z interfejsem /proc/net/dev, netstat, getifaddrs,
-sysctl lub libstatgrab. Mo¿na wybraæ, czy maj± byæ pokazywane
-wszystkie interfejsy, czy tylko aktualnie w³±czone. Obs³ugiwane jest
-wyj¶cie na zwyk³± konsolê, przez curses, w CSV lub w HTML-u.
-Obs³ugiwana jest nieograniczona liczba interfejsów, bêd± one dodawane
-dynamicznie w trakcie dzia³ania programu.
+innych systemÃ³w z interfejsem /proc/net/dev, netstat, getifaddrs,
+sysctl lub libstatgrab. MoÅ¼na wybraÄ‡, czy majÄ… byÄ‡ pokazywane
+wszystkie interfejsy, czy tylko aktualnie wÅ‚Ä…czone. ObsÅ‚ugiwane jest
+wyjÅ›cie na zwykÅ‚Ä… konsolÄ™, przez curses, w CSV lub w HTML-u.
+ObsÅ‚ugiwana jest nieograniczona liczba interfejsÃ³w, bÄ™dÄ… one dodawane
+dynamicznie w trakcie dziaÅ‚ania programu.
 
 %prep
 %setup -q

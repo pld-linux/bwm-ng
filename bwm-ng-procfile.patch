@@ -1,11 +1,11 @@
---- bwm-ng-0.5/src/retrieve.c~	2005-02-19 07:47:12.000000000 +0100
-+++ bwm-ng-0.5/src/retrieve.c	2006-04-17 13:11:57.320895500 +0200
-@@ -140,7 +140,7 @@
+--- bwm-ng-0.6/src/input/proc_net_dev.c.orig	2007-02-28 03:06:26.000000000 +0100
++++ bwm-ng-0.6/src/input/proc_net_dev.c	2008-12-25 16:02:57.000000000 +0100
+@@ -137,7 +137,7 @@
  
  	memset(&stats,0,(size_t)sizeof(t_iface_speed_stats)); /* init it */
-     /* dont open proc_net_dev if netstat_i is requested, else try to open and if it fails fallback */
--    if (!(f=fopen(PROC_FILE,"r"))) {
-+    if (!(f=fopen(PROC_NET_DEV,"r"))) {
- 		deinit("open of procfile failed: %s\n",strerror(errno));
+ 	/* dont open proc_net_dev if netstat_i is requested, else try to open and if it fails fallback */
+-	if (!(f=fopen(PROC_FILE,"r"))) {
++	if (!(f=fopen(PROC_NET_DEV,"r"))) {
+ 		deinit(1, "open of procfile failed: %s\n",strerror(errno));
  	}
  	buffer=(char *)malloc(MAX_LINE_BUFFER);

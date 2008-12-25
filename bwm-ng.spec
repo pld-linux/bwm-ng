@@ -9,6 +9,8 @@ Source0:	http://www.gropp.org/bwm-ng/%{name}-%{version}.tar.gz
 # Source0-md5:	d3a02484fb7946371bfb4e10927cebfb
 Patch0:		%{name}-procfile.patch
 URL:		http://www.gropp.org/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libstatgrab-devel
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

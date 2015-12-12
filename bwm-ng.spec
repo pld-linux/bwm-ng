@@ -1,17 +1,16 @@
 Summary:	Bandwidth monitor - display bandwidth usage on all interfaces
 Summary(pl.UTF-8):	Bandwidth monitor - wyświetlanie obciążenia na interfejsach
 Name:		bwm-ng
-Version:	0.6
-Release:	4
+Version:	0.6.1
+Release:	1
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://www.gropp.org/bwm-ng/%{name}-%{version}.tar.gz
-# Source0-md5:	d3a02484fb7946371bfb4e10927cebfb
 Patch0:		%{name}-procfile.patch
 URL:		http://www.gropp.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	libstatgrab-devel
+BuildRequires:	libstatgrab-devel >= 0.91
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://www.gropp.org/bwm-ng/%{name}-%{version}.tar.gz
+# Source0-md5:	ef0c7669508e95f56250ad4f8db98b7f
 Patch0:		%{name}-procfile.patch
 URL:		http://www.gropp.org/
 BuildRequires:	autoconf

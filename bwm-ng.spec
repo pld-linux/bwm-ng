@@ -36,7 +36,7 @@ dynamicznie w trakcie działania programu.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__aclocal}
